@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3b2115;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background-color: #3b2115;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-link {
+    margin-left: 20px;
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #d6a77a !important;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 100vh;
+    background: #f5e6d3;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero-content h1 span,
+.about h2 span,
+.menu-section h2 span,
+.contact-section h2 span {
+    color: #a45c35;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 20px 0;
+}
+
+.small-title,
+.section-title {
+    color: #a45c35;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-img {
+    width: 90%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* ================= BUTTON ================= */
+
+.coffee-btn {
+    background-color: #6f3e25;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.coffee-btn:hover {
+    background-color: #3b2115;
+    color: white;
+}
+
+.outline-btn {
+    border: 2px solid #6f3e25;
+    color: #6f3e25;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.outline-btn:hover {
+    background-color: #6f3e25;
+    color: white;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    background-color: white;
+}
+
+.about-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about h2,
+.menu-section h2,
+.contact-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+
+/* ================= MENU ================= */
+
+.menu-section {
+    background-color: #f7eee5;
+}
+
+.coffee-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.coffee-card:hover {
+    transform: translateY(-10px);
+}
+
+.coffee-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.price {
+    color: #a45c35;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    background-color: #3b2115;
+    color: white;
+}
+
+.contact-section h2 {
+    color: white;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #24130d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-img {
+        width: 90%;
+        height: 400px;
+    }
+
+    .about-img {
+        height: 350px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media only screen and (max-width: 767px) {
+
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-img {
+        width: 85%;
+        height: 300px;
+        margin-top: 40px;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about-img {
+        height: 300px;
+    }
+
+    .about h2,
+    .menu-section h2,
+    .contact-section h2 {
+        font-size: 32px;
+    }
+
+    .outline-btn {
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+}
